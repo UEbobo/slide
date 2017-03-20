@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="css/boboSlider.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/boboSlider.js"></script>
+    <script>
+    $(function() {
+
+        // 数据模拟
+        var data = [{
+            'src': 'img/1.jpg',
+            'link': 'http://www.baidu1.com'
+        }, {
+            'src': 'img/2.jpg',
+            'link': 'http://www.baidu2.com'
+        }, {
+            'src': 'img/3.jpg',
+            'link': 'http://www.baidu3.com'
+        }, {
+            'src': 'img/4.jpg',
+            'link': 'http://www.baidu4.com'
+        }, {
+            'src': 'img/5.jpg',
+            'link': 'http://www.baidu5.com'
+        }];
+
+        // 调用
+        $('#mySlider').slider({
+            dataSource: data, // 数据
+            animation: 'slide', //切换方式 fade淡入 slide滚动
+            stayTime: 2000, //停留时间,单位ms
+            switchTime: 500, // 切换的时间,单位ms
+            directionNav: true, //是否显示左右控制按钮 true&false
+            controlNav: true, //是否显示下方控制按钮 true&false
+            controlNavSeat: 'bottom', //下方控制按钮的位置  top&bottom
+            progressBar: { // 进度条的相关配置
+                show: true, // 是否显示
+                backgroundColor: '#3385ff', // 进度条的颜色
+                height: 5 // 进度条的高度
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="slide-wrap">
+        <!-- 轮播图容器 start -->
+        <div id="mySlider" class="slide">
+        </div>
+        <!-- 轮播图容器 end -->
+    </div>
+</body>
+
+</html>

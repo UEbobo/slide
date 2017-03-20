@@ -1,0 +1,111 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ .hide{
+     display: none;
+ }
+ .slide-wrap {
+     margin: 0 auto;
+     width: 100%;
+     height: 300px;
+ }
+ 
+ .slide {
+     overflow: hidden;
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .slide ul {
+     width: 2000px;
+     position: absolute;
+ }
+ 
+ .slide ul li {
+     float: left;
+     display: inline-block;
+ }
+ 
+ .slide li img {
+     height: 300px;
+ }
+ /*  圆点控制按钮 */
+ 
+ .control-nav-wrap {
+     padding: 5px 0;
+     position: absolute;
+     z-index: 10;
+     width: 100%;
+     height: 10px;
+     font-size: 0;
+     text-align: center;
+ }
+ 
+ .control-nav-wrap-top {
+     top: 0;
+ }
+ 
+ .control-nav-wrap-bottom {
+     bottom: 0;
+ }
+ 
+ .control-nav-wrap .control-nav {
+     padding-left: 10px;
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     background: url(../img/dot.png) -3px -19px no-repeat;
+ }
+ 
+ .control-nav-wrap .control-nav-selected {
+     background: url(../img/dot.png) -3px -3px no-repeat;
+ }
+ /*  向左向右按钮 */
+ 
+ .direction-nav {
+     position: absolute;
+     width: 40px;
+     height: 100%;
+     z-index: 10;
+ }
+ 
+ .direction-nav:hover {
+    /*  background-color: #333;
+    opacity: 0.2; */
+     cursor: pointer;
+ }
+ 
+ .direction-nav i {
+     margin-top: 100px;
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+ }
+ 
+ .direction-prev {
+     left: 0;
+ }
+ 
+ .direction-prev i {
+     background: url(../img/ad_ctr.png) -4px -25px no-repeat;
+ }
+ 
+ .direction-next {
+     right: 0;
+ }
+ 
+ .direction-next i {
+     background: url(../img/ad_ctr.png) -11px -114px no-repeat;
+ }
+/* 进度条 */
+.progress-bar{
+     z-index: 100;
+     position: absolute;
+     bottom: 0;
+     top: 0;
+     width: 0;
+     height: 5px;
+     background-color: #3385ff
+}
